@@ -2210,7 +2210,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100vw;\n  height: 100vh;\n}\nbody .container {\n  background-color: #3558c9;\n  padding: 10px;\n  color: antiquewhite;\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\nbody .container h3 {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 24px;\n  font-weight: 400;\n}\nbody .container .jokeBtn {\n  margin: 0 auto;\n  border: black solid 2px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;AACJ;AAAI;EACI,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;AAER;AADO;EACC,yCAAA;EACA,eAAA;EACA,gBAAA;AAGR;AADO;EACI,cAAA;EACA,uBAAA;AAGX","sourcesContent":["body {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100vw;\n    height: 100vh;\n    & .container {\n        background-color: #3558c9;\n        padding: 10px;\n        color: antiquewhite;\n        border-radius: 5px;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n       & h3 {\n        font-family: Arial, Helvetica, sans-serif;\n        font-size: 24px;\n        font-weight: 400;\n       }\n       & .jokeBtn {\n           margin: 0 auto;\n           border: black solid 2px ;\n       }\n\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100vw;\n  height: 100vh;\n}\nbody .container {\n  background-color: #3558c9;\n  padding: 10px;\n  color: antiquewhite;\n  border-radius: 5px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\nbody .container h3 {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 24px;\n  font-weight: 400;\n}\nbody .container #joke {\n  margin: 10px;\n  padding: 10px;\n  background-color: antiquewhite;\n  color: black;\n}\nbody .container .jokeBtn {\n  margin: 0 auto;\n  border: black solid 2px;\n  border-radius: 10px;\n  cursor: pointer;\n}\nbody .container .jokeBtn:hover {\n  transform: scale(1.1);\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;AACJ;AAAI;EACI,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;AAER;AADO;EACC,yCAAA;EACA,eAAA;EACA,gBAAA;AAGR;AADO;EACI,YAAA;EACA,aAAA;EACA,8BAAA;EACA,YAAA;AAGX;AADO;EACI,cAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;AAGX;AAFW;EACC,qBAAA;AAIZ","sourcesContent":["body {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100vw;\n    height: 100vh;\n    & .container {\n        background-color: #3558c9;\n        padding: 10px;\n        color: antiquewhite;\n        border-radius: 5px;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n       & h3 {\n        font-family: Arial, Helvetica, sans-serif;\n        font-size: 24px;\n        font-weight: 400;\n       }\n       & #joke {\n           margin: 10px;\n           padding: 10px;\n           background-color: antiquewhite;\n           color: black;\n       }\n       & .jokeBtn {\n           margin: 0 auto;\n           border: black solid 2px ;\n           border-radius: 10px;\n           cursor: pointer;\n           &:hover {\n            transform: scale(1.1);\n           }\n       }\n\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2855,11 +2855,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var cooking_hat = document.getElementById("cooking_hat");
 cooking_hat.src = _assets_cooking_hat_svg__WEBPACK_IMPORTED_MODULE_2__;
-console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
-console.log(1);
-console.log(2);
+var jokeBtn = document.getElementById("jokeBtn");
+jokeBtn.addEventListener("click", _generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"]);
+(0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main26cbca72fba63532ce0c.js.map
+//# sourceMappingURL=main20b5581f96a42d48a97b.js.map
