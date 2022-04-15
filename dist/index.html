@@ -4,32 +4,237 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+
     <title></title>
-    <script defer src="main20b5581f96a42d48a97b.js"></script>
-  </head>
+  <script defer src="mainb909709ed637951ea2d7.js"></script></head>
   <body>
-    <div class="container">
-      <img id="cooking_hat" alt="" />
-      <h3>Don't laugh challenge</h3>
-      <div id="joke" class="joke"></div>
-      <button id="jokeBtn" class="jokeBtn">Get another joke</button>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            alt=""
+            width=""
+            height=""
+            class="d-inline-block align-text-top"
+            id="logo"
+          />
+          <h1>Les petits plats</h1>
+        </a>
+      </div>
+    </nav>
+    <div class="custom-container">
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Rechercher une recette"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <img id="search_picture" alt="" />
+        </button>
+      </form>
+      <!-- Example single danger button -->
+      <div class="btn-group mt-4">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Ingrédients
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="btn-group mt-4">
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle ml-4"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Appareils
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="btn-group mt-4 mr-3">
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle ml-4"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Ustensiles
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <div class="row mt-4 recipes">
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 10min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirée
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 5min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirée
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 15min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirée
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 10min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirée
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 20min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirée
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-4">
+          <div class="card recipe">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body mb-4">
+              <div class="row">
+                <div class="col recipe__title">limonade de coco</div>
+                <div class="col recipe__timing">
+                  <img src="" class="timer" alt="" /> 30min
+                </div>
+              </div>
+              <div class="row">
+                <div class="col recipe__ingredients">
+                  Lait de coco: 400ml Jus de citron: 2 Créme de coco: 4
+                  cuillères Sucre: 20g Glaçons: 2
+                </div>
+                <div class="col recipes__instructions">
+                  Mettre les glaçons à votre goût dans le blender, ajouter le
+                  lait, la crème de coco, le jus de 2 citrons et le sucre. Mixer
+                  jusqu'à avoir la consistence désirées
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,32 +1,140 @@
-body {
 
+
+
+// scss-docs-start theme-color-variables
+$blue:       #3282F7;
+$green:       #68D9A4;
+$red:        #ED6454;
+$gray-100:         white;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
     width: 100vw;
     height: 100vh;
-    & nav {
+}
+
+    .bg-light {
         display: flex;
-        
+        background-color: none;
         justify-content: center;
         align-items: center;
-        & .navbar-brand {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
+        &.navbar > .container-fluid {
             justify-content: center;
-            align-items: center;
-            & h1 {
-                font-size: 36px;
-                color: #D04F4F;
-                font-weight: 700
-                ;
+            & .navbar-brand {
+                display: flex;
+                flex-direction: column;
                 text-decoration: none;
-                &:link {
+                justify-content: center;
+                align-items: center;
+                & h1 {
+                    font-size: 36px;
+                    color: #D04F4F;
+                    font-weight: 700
+                    ;
+                    font-family: 'DM Sans', sans-serif;
                     text-decoration: none;
+                    &:link {
+                        text-decoration: none;
+                    }
+                    &:visited {
+                        text-decoration: none;
+                    }
                 }
-                &:visited {
-                    text-decoration: none;
-                }
+         
             }
         }
     }
- 
-}
+   
+    .form-inline {
+        display: flex;
+        height: 69px;
+        border-radius: 5px;
+        & .form-control {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            background-color: #e7e7e7;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+        & .btn-outline-success {
+            border: none;
+            background-color: #e7e7e7;
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+
+  .custom-container {
+      margin: 0 150px;
+  }
+  .btn-group {
+      margin-right: 15px;
+  }
+    .dropdown-toggle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        width: 170px;
+        height: 69px;
+        &::after {
+            appearance: none;
+            border: none;
+            content: "";
+            background: url("../assets/arrow_down.svg") center center no-repeat;
+            width: 16px;
+            height: 10px;
+        }
+    }
+
+    .recipes {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        & .recipe {
+            background-color: #E7E7E7;
+            overflow: hidden;
+            margin: 15px;
+            & .title {
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+            & .timing {
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+            & .ingredients {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;
+                
+            }
+            & .instructions {
+                font-family: Roboto;
+                width: 100%;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+    }
