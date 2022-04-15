@@ -92,12 +92,14 @@ body {
     }
 
     .recipes {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        & .recipe {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+       gap: .25rem;
+       margin-top: 1rem;
+    }
+        .recipe {
+            border: solid 5px black;
             background-color: #E7E7E7;
-            overflow: hidden;
             margin: 15px;
             & .title {
                 font-family: Lato;
@@ -137,4 +139,8 @@ body {
 
             }
         }
+    
+
+    .hide {
+        display: none;
     }
