@@ -1,13 +1,7 @@
 
 
 
-// scss-docs-start theme-color-variables
-$blue:       #3282F7;
-$green:       #68D9A4;
-$red:        #ED6454;
-$gray-100:         white;
 
-@import "~bootstrap/scss/bootstrap";
 
 body {
     width: 100vw;
@@ -93,12 +87,12 @@ body {
 
     .recipes {
        display: grid;
-       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+       grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
        gap: .25rem;
        margin-top: 1rem;
     }
         .recipe {
-            border: solid 5px black;
+            
             background-color: #E7E7E7;
             margin: 15px;
             & .title {
