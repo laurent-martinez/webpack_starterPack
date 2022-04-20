@@ -20,7 +20,7 @@ export const recipes = [
       },
       {
         ingredient: "Sucre",
-        quantite: 30,
+        quantity: 30,
         unit: "grammes",
       },
       {
@@ -53,7 +53,7 @@ export const recipes = [
       },
       {
         ingredient: "Carotte",
-        quantite: 1,
+        quantity: 1,
       },
       {
         ingredient: "Citron Vert",
@@ -205,7 +205,7 @@ export const recipes = [
       },
       {
         ingredient: "Oeuf",
-        quantity: "2",
+        quantity: 2,
       },
       {
         ingredient: "Crème fraiche",
@@ -271,7 +271,7 @@ export const recipes = [
     ingredients: [
       {
         ingredient: "Noix",
-        quantity: "180",
+        quantity: 180,
         unit: "grammes",
       },
       {
@@ -345,7 +345,7 @@ export const recipes = [
     ingredients: [
       {
         ingredient: "Roblochon",
-        quantity: "1",
+        quantity: 1,
       },
       {
         ingredient: "Pommes de terre",
@@ -435,7 +435,7 @@ export const recipes = [
       },
       {
         ingredient: "Eau",
-        quantity: "0.5",
+        quantity: 0.5,
         unit: "tasses",
       },
     ],

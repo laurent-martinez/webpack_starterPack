@@ -1,11 +1,11 @@
 
-
-
-
-
 body {
     width: 100vw;
     height: 100vh;
+}
+img,
+svg {
+  vertical-align:baseline;
 }
 
     .bg-light {
@@ -51,6 +51,11 @@ body {
             background-color: #e7e7e7;
             border-radius: 5px 0 0 5px;
             border: none;
+            outline: none;
+            &:focus {
+                border: none;
+                outline: none;
+            }
         }
         & .btn-outline-success {
             border: none;
@@ -87,24 +92,32 @@ body {
 
     .recipes {
        display: grid;
-       grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+       grid-template-columns: repeat(auto-fill, minmax(410px, 2fr));
        gap: .25rem;
        margin-top: 1rem;
     }
         .recipe {
-            
+            height: auto;
             background-color: #E7E7E7;
             margin: 15px;
-            & .title {
+            display: flex;
+            align-items: center;
+            text-overflow: ellipsis;
+            &__title {
                 font-family: Lato;
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 400;
                 line-height: 22px;
                 letter-spacing: 0em;
                 text-align: left;
+                white-space: nowrap;
 
             }
-            & .timing {
+            &__timer {
+                text-align: right;
+              align-items: center;
+            }
+            &__timing {
                 font-family: Lato;
                 font-size: 18px;
                 font-weight: 700;
@@ -113,16 +126,19 @@ body {
                 text-align: left;
 
             }
-            & .ingredients {
+            &__ingredients {
                 font-family: Roboto;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: 12px;
+                width: 100%;
+                font-weight: 400;
+                line-height: 16px;
                 letter-spacing: 0em;
                 text-align: left;
-                
+                white-space: nowrap;
+                &__title {
+                    font-weight: 700;
+                }
             }
-            & .instructions {
+            &__instructions {
                 font-family: Roboto;
                 width: 100%;
                 font-size: 12px;
@@ -130,7 +146,7 @@ body {
                 line-height: 12px;
                 letter-spacing: 0em;
                 text-align: left;
-
+                text-align: justify;
             }
         }
     
@@ -138,3 +154,4 @@ body {
     .hide {
         display: none;
     }
+

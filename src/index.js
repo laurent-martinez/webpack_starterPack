@@ -18,6 +18,7 @@ const searchBar = document.querySelector("[data-search]");
 
 recipeList = recipes.map((recipe) => {
   const card = recipeCardTemplate.content.cloneNode(true).children[0];
+  console.log(card);
   const title = card.querySelector("[data-title]");
   const timing = card.querySelector("[data-timing]");
   const ingredients = card.querySelector("[data-ingredients]");
@@ -26,29 +27,48 @@ recipeList = recipes.map((recipe) => {
   timing.textContent = recipe.time;
   const ingredientso = recipe.ingredients;
   ingredientso.forEach((ing) => {
-    ingredients.textContent += `${ing.ingredient} : ${
-      ing.quantity + ing.unit || ing.quantity
-    }`;
+    ingredients.innerHTML += `<span class="recipe__ingredients__title">${
+      ing.ingredient
+    } : </span> ${
+      parseInt(ing.quantity) + ing.unit || parseInt(ing.quantity) || ""
+    } <br>`;
   });
   instructions.textContent = recipe.description;
   recipeCardsContainer.append(card);
   return {
     titre: recipe.name,
     ingred: recipe.ingredients,
+    description: recipe.description,
     element: card,
   };
 });
-console.log(recipeList);
 searchBar.addEventListener("input", (e) => {
-  const value = e.target.value.toLowerCase();
-  console.log(value);
+  const value = e.target.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "");
   recipeList.forEach((list) => {
+    let isVisible;
     list.ingred.forEach((ing) => {
-      const isVisible =
-        list.titre.toLowerCase().includes(value) ||
-        ing.ingredient.toLowerCase().includes(value);
-      list.element.classList.toggle("hide", !isVisible);
+      isVisible =
+        list.titre
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/\p{Diacritic}/gu, "")
+          .includes(value) ||
+        ing.ingredient
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/\p{Diacritic}/gu, "")
+          .includes(value) ||
+        list.description
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/\p{Diacritic}/gu, "")
+          .includes(value);
     });
+
+    list.element.classList.toggle("hide", !isVisible);
   });
 });
 
